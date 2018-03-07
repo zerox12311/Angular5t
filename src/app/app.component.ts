@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  name = 'LuxProtoss';
+  url = 'https://www.google.com';
+
+  zzz(){
+    console.log('123132');
+  }
+
+
 }
