@@ -17,6 +17,10 @@ import { Lesson6Component } from './lesson6/lesson6.component';
 import { HightlightDirective } from './hightlight.directive';
 import { Lesson61Component } from './lesson6-1/lesson6-1.component';  //別人的module
 import { AppRoutingModule } from './app-routing.module';
+import { DyclassComponent } from './dyclass/dyclass.component';
+import { Jq1Component } from './jq1/jq1.component';
+import { Lesson7Component } from './lesson7/lesson7.component';
+import { BmiService } from './bmi.service';
 
 @NgModule({
   declarations: [
@@ -31,7 +35,10 @@ import { AppRoutingModule } from './app-routing.module';
     InputButtonComponent,
     Lesson6Component,
     HightlightDirective,
-    Lesson61Component
+    Lesson61Component,
+    DyclassComponent,
+    Jq1Component,
+    Lesson7Component
   ],
   imports: [
     BrowserModule,
@@ -40,7 +47,9 @@ import { AppRoutingModule } from './app-routing.module';
     AppRoutingModule
 
   ],
-  providers: [],
+  providers: [
+    BmiService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
